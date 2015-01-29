@@ -8,16 +8,23 @@
 	<body>
 		<h1> Your Restaurant Bill</h1>
    <!-- <form action="/myaction" method="post"> -->
-   <form>
-      	  <p>Cost of Meal <input type="text" meal="meal"></p>
-      	  <p>Amount of Tip <input type="text" name="tip"></p>
-      	  <p>Week Total <input type="text" name="week"></p>
-      	  <p>Month Total <input type="text" name="month"></p>
-      	  <p>Year Total <input type="text" name="year"></p>
+   <form action=" " id="meal_tip" onsubmit="return false;">
+      	  <p>Cost of Meal <input type="number" step="0.01" name="meal"></p>
+      	  <p>Amount of Tip <input type="number" step="0.01" name="tip"></p>
+      	  <p>Week Total <input type="number" step="0.01" name="week"></p>
+      	  <p>Month Total <input type="number" step="0.01" name="month"></p>
+      	  <p>Year Total <input type="number" step="0.01" name="year"></p>
     </form>
 	<script src="./js/scripts.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	</body>
 	</html>
+
+
+<!---TODO
+	1. Be sure the form handles decimals (done)
+	2. Have the boxes line up
+	3. Jazz up text
+	4. Prohibit users from altering week, month, total, and year boxes
 
 
