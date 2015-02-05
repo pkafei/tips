@@ -1,14 +1,35 @@
 h1 { font-family: Playfair Display;
 	monospace; 
-	font-size: 24px; 
+	font-size: 36px; 
 	font-style: bold; 
 	font-variant: normal; 
 	font-weight: 500; 
 	line-height: 26.4px;
+	text-decoration: underline;
+	/*border-bottom: 3px double;*/
+	line-height: 1.9em;
+
 }
 
 body {
 	background-color: lavender;
+
+}
+
+form{
+	font-family: Playfair Display;
+	monospace; 
+	font-size: 20px; 
+	/*font-style: bold; */
+	font-variant: normal; 
+	font-weight: 500; 
+
+}
+input{
+	border: 1px solid #FFFFFF;
+    font-size: 16px;
+    padding: 5px;
+    width: 200px;
 
 }
 
