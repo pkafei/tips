@@ -1,3 +1,17 @@
+h1 { font-family: Playfair Display;
+	monospace; 
+	font-size: 24px; 
+	font-style: bold; 
+	font-variant: normal; 
+	font-weight: 500; 
+	line-height: 26.4px;
+}
+
+body {
+	background-color: lavender;
+
+}
+
 .meals p:nth-child(even){
 	background-lavender;
 }
