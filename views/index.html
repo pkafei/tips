@@ -9,7 +9,7 @@
 	<body>
 		<h1> Your Restaurant Bill</h1>
    <!-- <form action="/myaction" method="post"> -->
-   <form action="#" id="meal_tip" onsubmit="return false" oninput="total.value = cost.valueAsNumber + tip.valueAsNumber">
+   <form action="#" id="meal_tip" onsubmit="return false" oninput="total.value = cost.valueAsNumber + (tip.valueAsNumber * .1)">
       	  <p>Cost of Meal <input type="number" step="0.01" name="cost" id="cost"></p>
       	  <p>Tip <input type="number" step="0.01" name="tip" id="tip"></p>
       	  <p>Total: <output type="number" step="0.01" name="total" for="cost tip" id="total"></p>
