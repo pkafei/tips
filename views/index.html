@@ -9,11 +9,13 @@
 	<body>
 		<h1> Your Restaurant Bill</h1>
    <!-- <form action="/myaction" method="post"> -->
-   <form action="#" id="meal_tip" onsubmit="return false;">
-      	  <p>Cost of Meal <input type="number" step="0.01" name="meal" id="cost"></p>
-      	  <p>Week Total <input type="date" step="0.01" name="meal" id="week"></p>
-      	  <p>Month Total <input type="date" step="0.01" name="meal" id="month"></p>
-      	  <p>Year Total <input type="date" step="0.01" name="meal" id="year"></p>
+   <form action="#" id="meal_tip" onsubmit="return false" oninput="total.value = cost.valueAsNumber + tip.valueAsNumber">
+      	  <p>Cost of Meal <input type="number" step="0.01" name="cost" id="cost"></p>
+      	  <p>Tip <input type="number" step="0.01" name="tip" id="tip"></p>
+      	  <p>Total: <output type="number" step="0.01" name="total" for="cost tip" id="total"></p>
+      	  <p>Weekly Total <input type="date" step="0.01" name="meal" id="week"></p>
+      	  <p>Monthly Total <input type="date" step="0.01" name="meal" id="month"></p>
+      	  <p>Yearly Total <input type="date" step="0.01" name="meal" id="year"></p>
     </form>
 	<script src="./js/scripts.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -24,7 +26,14 @@
 <!---TODO
 	1. Be sure the form handles decimals (done)
 	2. Have the boxes line up
-	3. Jazz up text
+	3. Add up Meal and tip
+	3. Divide Meal and tip by number of friends
 	4. Prohibit users from altering week, month, total, and year boxes
+
+<form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+  <input name="a" id="a" type="number" step="any"> +
+  <input name="b" id="b" type="number" step="any"> =
+  <output name="o" for="a b"></output>
+</form>
 
 
