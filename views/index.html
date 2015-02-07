@@ -28,7 +28,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
 	<script href="./js/script.js"></script>
 	<script>
-	$("#meal_tip").validate();
+	$("#meal_tip").validate({
+		rules: {
+			field: {
+				required: true,
+				number: true
+			}
+		}
+	});
 	</script>
 	</html>
 
