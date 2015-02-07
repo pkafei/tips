@@ -25,6 +25,11 @@ form{
 	font-weight: 500; 
 
 }
+
+span{
+border-color: red;
+
+}
 input{
 	border: 1px solid #FFFFFF;
     font-size: 16px;
