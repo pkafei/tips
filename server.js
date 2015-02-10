@@ -1,6 +1,8 @@
 // Let's get the first page up and running
 var express = require('express');
 var app = express();
+var db = sqlite3.Database(':memory:');
+
 
 app.set('port', (process.env.PORT || 3000));
 
