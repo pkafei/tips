@@ -12,6 +12,7 @@
   "dependencies": {
     "ejs": "^2.2.3",
     "express": "^4.11.1",
-    "mustache": "^1.0.0"
+    "mustache": "^1.0.0",
+    "sqlite3": "^3.0.4"
   }
 }
