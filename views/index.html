@@ -8,18 +8,23 @@
 	</head>
 	<body>
 		<h1> Your Restaurant Bill</h1>
-   <!-- <form action="/myaction" method="post"> -->
+		
+   <!-- Form-->
    <form action="#" id="meal_tip" onsubmit="return false" method="get" oninput="total.value = cost.valueAsNumber + (tip.valueAsNumber * .1)">
    		<fieldset>
       	  <p>Cost of Meal (required) <input type="number" value=0 step="1.0" name="cost" id="cost" required></p>
       	  <p>Tip <input type="number" step="1.0" value=0 name="tip" id="tip" requried></p>
-      	  <p>Total: <output type="number" step="0.01" name="total" for="cost tip" id="total"></p> <button id = "save">SAVE</button>
-      	  <p>Weekly Total <input type="date" step="0.01" name="meal" id="week"></p>
+      	  <p>Total: <output type="number" step="0.01" name="total" for="cost tip" id="total"></p> <button id = "save">Save</button>
+      	 </fieldset>
+      	 <fieldset>
+      	  <p>Weekly Total <input type="date" step="0.01" name="meal" id="week"></p><button id = "total">Total</button>
       	  <p>Monthly Total <input type="date" step="0.01" name="meal" id="month"></p>
       	  <p>Yearly Total <input type="date" step="0.01" name="meal" id="year"></p>
       	</fieldset>
     </form>
 	</body>
+
+	<!--Scripts -->
 	<script src="./js/scripts.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/additional-methods.js"></script>
