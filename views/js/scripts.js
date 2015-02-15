@@ -7,8 +7,8 @@ if(typeof(Storage) !== "undefined") {
     // Sorry! No Web Storage support..
 }
 
-// Dummy Script to test eventlisteners
-function savePop() {
+// Save cost of meal
+function saveMealCost() {
 	var message = document.getElementById("save")
 	message.addEventListener("click",
 		function(){
@@ -16,7 +16,24 @@ function savePop() {
 			localStorage.setItem("amount", total);
 		});
 }
-savePop();
+saveMealCost();
+
+// Retrieve cost of meal
+function retreiveWeeklyMealCost() {
+	var message = document.getElementById("save")
+	message.addEventListener("click",
+		function(){
+			var weekly_total = document.getElementById("weekly_total").value;
+			var get_weekly_totallocalStorage.getItem("amount", weekly total);
+}
+retreiveWeeklyMealCost();
 
 
+/* Sources
 
+http://stackoverflow.com/questions/12661293/save-and-load-date-localstorage
+
+// Get Item
+ var x = document.getElementById("myForm").elements.item(0).value;
+
+*/
